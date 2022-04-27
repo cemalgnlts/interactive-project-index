@@ -131,8 +131,9 @@ class FilteredList {
     }
 
     newElement({ title, category, menu, image }) {
-        return `<div data-menu="${menu}" class="gallery__content" style="background-image: url(src/img/${image}.jpg)">
-            <div class="gallery__content__bg" style="background-image: url(src/img/${image}.jpg)"></div>
+				const imgUrl = new URL(`/src/img/${image}.jpg`, import.meta.url);
+        return `<div data-menu="${menu}" class="gallery__content" style="background-image: url(${imgUrl.href})">
+            <div class="gallery__content__bg" style="background-image: url(${imgUrl.href})"></div>
             <div class="gallery__content__info">
                 <h1 class="gallery__content__title">${title}</h1>
                 <span class="gallery__content__category">${category}</span>
