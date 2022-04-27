@@ -1,0 +1,19 @@
+{
+  "name": "interactive-project-index",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.10.3",
+    "imagesloaded": "^5.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.50.1",
+    "vite": "^2.9.5"
+  }
+}

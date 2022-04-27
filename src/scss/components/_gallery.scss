@@ -1,0 +1,66 @@
+@use "sass:math";
+
+.gallery {
+  $card-height: 100px;
+  --card-height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    height: 100%;
+    color: white;
+    position: relative;
+    flex: 0 1 var(--card-height);
+
+    &__info {
+      position: relative;
+      opacity: 0;
+      padding: 1em;
+      pointer-events: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    &,
+    &__bg {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &__bg {
+      --card-half-height: calc(var(--card-height) / 2);
+      --inset-top: #{math.div($card-height, 2)};
+      --inset-bottom: #{math.div($card-height, 2)};
+      @debug Bölme ile #{$card-height / 2};
+      @debug Function ile math.div($card-height, 2);
+      pointer-events: none;
+      height: $card-height * 2;
+      position: absolute;
+      top: calc(var(--card-half-height) * -1);
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      clip-path: inset(var(--inset-top) 0 var(--inset-bottom) 0);
+    }
+
+    &__title {
+      font-size: 3rem;
+      font-weight: 200;
+    }
+  }
+
+  &__backdrop {
+    pointer-events: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+}

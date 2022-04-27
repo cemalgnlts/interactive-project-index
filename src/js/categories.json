@@ -1,0 +1,44 @@
+[
+  {
+    "image": "3",
+    "title": "Nike x Carhartt",
+    "category": "Website",
+    "menu": "Digital"
+  },
+  {
+    "image": "4",
+    "title": "Officina 28",
+    "category": "Social Media",
+    "menu": "Digital"
+  },
+  {
+    "image": "9",
+    "title": "Paint",
+    "category": "Social Media",
+    "menu": "Advertising"
+  },
+  {
+    "image": "8",
+    "title": "Norma Jean",
+    "category": "Social Media",
+    "menu": "Digital"
+  },
+  {
+    "image": "2",
+    "title": "Chloe",
+    "category": "Social Media",
+    "menu": "Digital"
+  },
+  {
+    "image": "5",
+    "title": "Bakery",
+    "category": "Website",
+    "menu": "Branding"
+  },
+  {
+    "image": "1",
+    "title": "Parfum",
+    "category": "Website",
+    "menu": "Branding"
+  }
+]

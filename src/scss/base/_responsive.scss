@@ -1,0 +1,29 @@
+@media screen and (max-width: 375px) {
+    header {
+        padding: 1em !important;
+    }
+
+    ul.nav {
+        li {
+            margin-right: 7px;
+
+            &::before {
+                left: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .filter-nav {
+    flex-wrap: wrap;
+
+    &__intro {
+        margin-bottom: 1em;
+    }
+
+    & ul {
+        margin-left: 0.9em;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.filter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1em;
+
+  &__intro {
+    font-size: 1.2rem;
+  }
+
+  &__list {
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

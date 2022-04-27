@@ -1,0 +1,39 @@
+@import "base";
+@import "components";
+
+body.loading {
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    z-index: 999;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+  }
+
+  &::after {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    background: rgba(95, 158, 160, 0.533);
+    border: solid 2px cadetblue;
+    opacity: 0.5;
+    animation: anim-loader 500ms linear infinite alternate forwards;
+  }
+}
+
+@keyframes anim-loader {
+  to {
+    opacity: 1;
+    transform: scale(0.5, 0.5);
+  }
+}
